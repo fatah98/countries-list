@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import toast from "react-hot-toast";
 import { Loader } from "../components/Loader";
 const Homepage = () => {
-  const [countries, setCoutries] = useState([]);
+  const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(true);
   const [region, setRegion] = useState("All");
   const [search, setSearch] = useState("");
@@ -29,7 +29,7 @@ const Homepage = () => {
               flag: item.flags.png,
             };
           });
-          setCoutries(parsedData);
+          setCountries(parsedData);
           setLoading(false);
         })
         .catch((err) => {
