@@ -50,7 +50,7 @@ const DetailsPage = () => {
   return (
     <main className="flex flex-col gap-5 p-5 mx-auto max-w-7xl">
       {loading && <Loader />}
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 dark:text-DarkModeText">
         <div className="">
           <Link
             to=".."
